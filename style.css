@@ -15,16 +15,20 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
+    font-size: clamp(1.8rem, 8vw, 3rem); /* Much bigger on mobile */
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: clamp(1rem, 4vw, 1.1rem);
+    font-size: clamp(0.9rem, 4vw, 1.1rem); /* Readable on small screens */
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #282C34;
@@ -32,12 +36,12 @@ h2 {
 }
 
 button {
-    font-size: clamp(1rem, 4.5vw, 1.1rem);
+    font-size: clamp(1rem, 5vw, 1.1rem); /* Larger tap targets */
     background-color: #282C34;
     color: #FFFFFF;
     border: none;
-    padding: 12px 24px;
-    font-family: 'Inter', sans-serif;
+    padding: 14px 28px; /* Bigger padding for easier tapping */
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     border-radius: 8px;
     cursor: pointer;
@@ -49,9 +53,9 @@ button:hover {
 }
 
 #output {
-     font-size: clamp(1.1rem, 4.5vw, 1.25rem);
+    font-size: clamp(1rem, 5vw, 1.25rem); /* Much more readable */
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     max-width: 500px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -59,13 +63,10 @@ button:hover {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(40, 44, 52, 0.1);
-    line-height: 1.6;
-
-    /* These two lines keep the box hidden when it is empty */
+    line-height: 1.7; /* More breathing room between lines */
     display: none;
 }
 
-/* This rule makes the box appear once it has text inside */
 #output:not(:empty) {
     display: block;
 }
@@ -73,78 +74,12 @@ button:hover {
 .button-group {
     margin-top: 1.5rem;
     display: none;
-    /* Hidden until first click */
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
 }
 
-/* This makes both buttons in the group look consistent */
 #generateAgain,
 #copyBtn {
     font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
-    padding: 8px 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #282C34;
-    border: 1.5px solid #282C34;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-weight: 400;
-}
-
-#generateAgain:hover,
-#copyBtn:hover {
-    background-color: #282C34 !important;
-    color: #FFFFFF !important;
-}
-
-body {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-
-footer {
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    
-    /* Flexbox magic to center and align items */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
-    color: #282C34;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between name, pipe, and icon */
-    padding: 8px 16px;
-    border-radius: 50px;
-    backdrop-filter: blur(5px);
-}
-
-footer a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: 700;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-    display: flex; /* Helps align the SVG */
-}
-
-footer a:hover {
-    opacity: 1;
-}
-
-.divider {
-    opacity: 0.4;
-    font-weight: 300;
-}
+    font-size: clamp(0.9rem, 4vw, 1rem); /* Bigger for accessibility */
+    padding: 10px 20px; /* More padding for
