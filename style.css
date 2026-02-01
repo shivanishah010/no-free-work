@@ -123,13 +123,12 @@ footer a {
     backdrop-filter: blur(5px);
 }
 
-/* --- MOBILE ONLY OVERRIDES (Final Polish) --- */
+/* --- MOBILE --- */
 @media (max-width: 768px) {
     
-    /* 1. Reset Body for Scrolling Footer */
     body {
-        padding-bottom: 40px; /* Normal padding, no longer needs to clear a fixed footer */
-        height: auto; /* Allows the page to grow and scroll */
+        padding-bottom: 20px; 
+        height: auto;
         min-height: 100vh;
     }
 
@@ -144,7 +143,6 @@ footer a {
         margin-bottom: 1rem;
     }
 
-    /* 2. Added Margin to Reply Box */
     #output {
         font-size: 1.25rem;
         padding: 1.5rem;
@@ -177,17 +175,16 @@ footer a {
         max-width: 350px;
     }
     
-    /* 3. Un-Fix the Footer */
     footer {
-        position: relative; /* Scrolls with the page instead of floating */
+        position: relative;
         bottom: 0;
         margin-top: 50px; /* Adds space after the last button */
-        background: transparent; /* Removes that lighter background */
-        padding: 20px 0;
+        background: transparent;
+        padding: 15px 0;
     }
 
     .footer-content {
-        background: transparent; /* Extra safety to remove background */
+        background: transparent;
         backdrop-filter: none;
     }
 }
