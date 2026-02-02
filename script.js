@@ -1,6 +1,6 @@
 const messages = [
         "Thanks so much for considering me. Please see here for a link to my rates. Let me know if you have any questions.",
-        "This sounds like a great opportunity, thank you for thinking of me. Could you share the budget for this opportunity?",
+        "This sounds like a great opportunity, thank you for thinking of me. Could you share the budget for this project?",
         "Thanks for reaching out. I’m currently focusing all my time on my existing client work, so I can't volunteer for this. Hope you find the right fit.",
         "That sounds like an interesting project. I only take on paid commissions at this stage of my career, but I appreciate you thinking of me.",
         "Thanks for reaching out. I'm not able to take on unpaid projects right now, but I'd love to chat if a budget opens up later this year.",
