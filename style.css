@@ -358,6 +358,7 @@ footer a:hover {
 /* Fix for the section titles */
 .resource-group h2 {
     font-size: 0.875rem;
+    text-align: left !important;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #64748B;
