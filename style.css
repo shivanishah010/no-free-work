@@ -397,8 +397,8 @@ footer a:hover {
     #output {
         font-size: 1.25rem;
         padding: 1.5rem;
-        width: 90%;
-        max-width: none; 
+        width: 95%;
+        max-width: 500px; 
         margin-top: 1.5rem;
         box-sizing: border-box;
     }
