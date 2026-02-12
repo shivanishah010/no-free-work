@@ -2,12 +2,12 @@
 
 html {
     font-size: 17px;
-    background-color: #FAFBFC;
+    background-color: #F9F9F9;
 }
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: #FAFBFC;
+    background-color: #F9F9F9;
     color: #1A1A1A;
     margin: 0;
     min-height: 100vh;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .main-nav a {
-    color: #6B7280;
+    color: #6B6763;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .main-nav a:visited {
-    color: #6B7280;
+    color: #6B6763;
 }
 
 .main-nav a:hover {
@@ -99,11 +99,11 @@ a:hover {
 
 main {
     width: 100%;
-    /* Matches the max-width of header-inner */
+    /* Matches the max-width of your header-inner */
     max-width: 1200px;
     /* Centers the main content area */
     margin: 0 auto;
-    /* Matches the horizontal padding of header-inner */
+    /* Matches the horizontal padding of your header-inner */
     padding: 0 20px;
     /* Ensures the width calculation includes the padding */
     box-sizing: border-box;
@@ -112,13 +112,13 @@ main {
 .generator-wrapper {
     min-height: calc(100vh - 120px);
 
-    /* Center content perfectly */
+    /* 2. Center content perfectly */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    /* Safety constraints */
+    /* 3. Safety constraints */
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -132,7 +132,7 @@ h1 {
     margin-bottom: 1rem;
     margin-top: 0;
     letter-spacing: -0.03em;
-    line-height: 1.1;
+    line-height: 1.15;
     color: #0F172A;
     text-align: center;
 }
@@ -141,8 +141,8 @@ h2 {
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #64748B;
-    margin-bottom: 0.75rem;
+    color: #6B6B78;
+    margin-bottom: 1rem;
     font-weight: 600;
     text-align: center;
 }
@@ -157,13 +157,16 @@ button {
     font-weight: 500;
     border-radius: 12px;
     cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.1),
+        0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #1E293B;
-    transform: translateY(-1px);
+    transform: translateY(-1px) scale(1.02);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -178,7 +181,7 @@ button:active {
     max-width: 600px;
     border-radius: 16px;
     background: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #EBE7E3;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     line-height: 1.7;
     display: none;
@@ -202,7 +205,7 @@ button:active {
     padding: 12px 24px;
     background-color: #FFFFFF;
     color: #1A1A1A;
-    border: 1.5px solid #E5E7EB;
+    border: 1.5px solid #EBE7E3;
     border-radius: 12px;
     font-weight: 500;
     width: 200px;
@@ -213,8 +216,8 @@ button:active {
 
 #generateAgain:hover,
 #copyBtn:hover {
-    background-color: #F9FAFB;
-    border-color: #D1D5DB;
+    background-color: #F0F0F0;
+    border-color: #D8D3CE;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -233,7 +236,7 @@ footer {
 }
 
 footer a {
-    color: #6B7280 !important;
+    color: #6B6763 !important;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -257,7 +260,7 @@ footer a:hover {
 
 /* --- RESOURCES PAGE STYLES --- */
 
-/* Layout & Alignment Fix */
+/* 1. Layout & Alignment Fix */
 .resources-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -271,11 +274,10 @@ footer a:hover {
 
 .page-intro {
     margin-bottom: 3rem;
-    color: #4B5563;
+    color: #524C48;
     font-size: 1.125rem;
     line-height: 1.7;
     text-align: left;
-    max-width: 700px;
 }
 
 .resources-container h2 {
@@ -283,13 +285,14 @@ footer a:hover {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #EBE7E3;
     color: #374151;
     font-weight: 600;
     letter-spacing: -0.01em;
+    text-align: left;
 }
 
-/* The Grid System */
+/* 2. The Grid System */
 .resource-grid {
     display: grid;
     /* Creates a responsive grid: 1 column on mobile, 2 on desktop */
@@ -297,10 +300,10 @@ footer a:hover {
     gap: 30px;
 }
 
-/* The Clean Minimal Cards */
+/* 3. The Clean Minimal Cards */
 .resource-card {
     background: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #EBE7E3;
     border-radius: 16px;
     padding: 2rem;
     text-decoration: none;
@@ -340,11 +343,11 @@ footer a:hover {
 .resource-card .founder {
     margin-top: 1.25rem;
     font-size: 0.875rem;
-    color: #6B7280;
+    color: #6B6763;
 }
 
 .resource-card .founder a {
-    color: #4B5563;
+    color: #524C48;
     font-weight: 500;
 }
 
@@ -352,7 +355,7 @@ footer a:hover {
     margin: 0;
     font-size: 0.9375rem;
     line-height: 1.6;
-    color: #4B5563;
+    color: #524C48;
 }
 
 /* Fix for the section titles */
@@ -361,10 +364,10 @@ footer a:hover {
     text-align: left !important;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #64748B;
+    color: #6B6B78;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #EBE7E3;
     padding-bottom: 0.75rem;
     font-weight: 600;
 }
@@ -397,9 +400,9 @@ footer a:hover {
 
     #output {
         font-size: 1.25rem;
-        padding: 1.5rem;
+        padding: 1rem;
         width: 95%;
-        max-width: 500px; 
+        max-width: 500px;
         margin-top: 1.5rem;
         box-sizing: border-box;
     }
@@ -484,7 +487,7 @@ footer a:hover {
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0 !important;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #EBE7E3;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -494,7 +497,7 @@ footer a:hover {
     border-bottom: 1px solid #F3F4F6;
 }
 
-/* If the checkbox is checked, show the nav */
+/* THE MAGIC: If the checkbox is checked, show the nav */
 #nav-check:checked~.main-nav {
     display: flex;
 }
