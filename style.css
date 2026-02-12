@@ -134,6 +134,7 @@ h1 {
     letter-spacing: -0.03em;
     line-height: 1.1;
     color: #0F172A;
+    text-align: center;
 }
 
 h2 {
@@ -143,6 +144,7 @@ h2 {
     color: #64748B;
     margin-bottom: 0.75rem;
     font-weight: 600;
+    text-align: center;
 }
 
 button {
