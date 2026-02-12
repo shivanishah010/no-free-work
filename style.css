@@ -1,24 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 html {
     font-size: 17px;
-    background-color: #C9B1BD;
+    background-color: #FAFBFC;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: #C9B1BD;
-    color: #282C34;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #FAFBFC;
+    color: #1A1A1A;
     margin: 0;
     min-height: 100vh;
     box-sizing: border-box;
     display: block;
-    padding: 100px 20px 0 20px;
+    padding: 120px 20px 0 20px;
     text-align: left;
+    line-height: 1.6;
 }
 
 a {
-    color:#282C34;
+    color: #1A1A1A;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #4A5568;
 }
 
 .site-header {
@@ -26,16 +32,17 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: 72px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     z-index: 1000;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     margin: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 /* 2. Align the logo and links inside the bar */
@@ -57,49 +64,46 @@ a {
 }
 
 .main-nav a {
-    /* 1. Force the color to match your text (black or your specific hex) */
-    color: #282C34;
-    text-transform: uppercase;
+    color: #6B7280;
     text-decoration: none;
-    /* No underline by default */
-    font-weight: 400;
-    font-size: 0.9rem;
-    /* Optional: ensures it's readable */
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
-/* 2. Ensure viewed/hover states NEVER change color */
-.main-nav a:visited,
-.main-nav a:hover,
-.main-nav a:active {
-    color: #282C34;
-    text-decoration: none;
-    /* No underline on hover either */
+.main-nav a:visited {
+    color: #6B7280;
 }
 
-/* 3. ONLY underline the page the user is currently on */
+.main-nav a:hover {
+    color: #CE3B62;
+}
+
 .main-nav a.active {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    /* Adds a tiny gap for a cleaner look */
+    color: #CE3B62;
+    font-weight: 600;
 }
 
-/* 3. Style the "Not for Free" title */
 .site-title {
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
-    color: #282C34;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    color: #1A1A1A;
+    letter-spacing: -0.02em;
     font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.site-title:hover {
+    color: #CE3B62;
 }
 
 main {
     width: 100%;
-    /* Matches the max-width of your header-inner */
+    /* Matches the max-width of header-inner */
     max-width: 1200px;
     /* Centers the main content area */
     margin: 0 auto;
-    /* Matches the horizontal padding of your header-inner */
+    /* Matches the horizontal padding of header-inner */
     padding: 0 20px;
     /* Ensures the width calculation includes the padding */
     box-sizing: border-box;
@@ -108,13 +112,13 @@ main {
 .generator-wrapper {
     min-height: calc(100vh - 120px);
 
-    /* 2. Center content perfectly */
+    /* Center content perfectly */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    /* 3. Safety constraints */
+    /* Safety constraints */
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -123,50 +127,60 @@ main {
 /* --- DESKTOP STYLES --- */
 
 h1 {
-    font-size: 3rem; 
-    font-weight: 400;
-    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
     margin-top: 0;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: #0F172A;
 }
 
 h2 {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #282C34;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    color: #64748B;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 button {
     font-size: 1rem;
-    background-color: #282C34;
+    background-color: #0F172A;
     color: #FFFFFF;
     border: none;
-    padding: 12px 24px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    border-radius: 8px;
+    padding: 14px 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border-radius: 12px;
     cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    opacity: 0.9;
+    background-color: #1E293B;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
 }
 
 #output {
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    padding: 2rem;
-    max-width: 500px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(40, 44, 52, 0.1);
-    line-height: 1.6;
-    display: none; 
+    font-size: 1.125rem;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    max-width: 600px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    line-height: 1.7;
+    display: none;
+    color: #374151;
 }
 
 .button-group {
@@ -183,55 +197,65 @@ button:hover {
 #generateAgain,
 #copyBtn {
     font-size: 1rem;
-    padding: 10px 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #282C34;
-    border: 1.5px solid #282C34;
-    border-radius: 8px;
-    font-weight: 400;
+    padding: 12px 24px;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 12px;
+    font-weight: 500;
     width: 200px;
     text-align: center;
     display: inline-block;
+    transition: all 0.2s ease;
 }
 
 #generateAgain:hover,
 #copyBtn:hover {
-    background-color: #282C34 !important;
-    color: #FFFFFF !important;
+    background-color: #F9FAFB;
+    border-color: #D1D5DB;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 footer {
     position: relative;
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
 }
 
 footer a {
-    color: #282C34 !important;
+    color: #6B7280 !important;
     text-decoration: none;
-    font-weight: 700;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #1A1A1A !important;
 }
 
 .footer-content {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     padding: 8px 16px;
     border-radius: 50px;
 }
 
+.footer-content .divider {
+    color: #D1D5DB;
+}
+
 /* --- RESOURCES PAGE STYLES --- */
 
-/* 1. Layout & Alignment Fix */
+/* Layout & Alignment Fix */
 .resources-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -244,23 +268,26 @@ footer a {
 /* Keep the main title centered for balance */
 
 .page-intro {
-    margin-bottom: 2rem;
-    opacity: 0.8;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #4B5563;
+    font-size: 1.125rem;
+    line-height: 1.7;
     text-align: left;
+    max-width: 700px;
 }
 
 .resources-container h2 {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(40, 44, 52, 0.1);
-    opacity: 0.8;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #E5E7EB;
+    color: #374151;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
-/* 2. The Grid System */
+/* The Grid System */
 .resource-grid {
     display: grid;
     /* Creates a responsive grid: 1 column on mobile, 2 on desktop */
@@ -268,62 +295,75 @@ footer a {
     gap: 30px;
 }
 
-/* 3. The Glass Cards */
+/* The Clean Minimal Cards */
 .resource-card {
-    background: rgba(255, 255, 255, 0.3);
-    /* Matches your generator box */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 2rem;
     text-decoration: none;
-    color: #282C34;
+    color: #1A1A1A;
     transition: all 0.2s ease;
     display: block;
-    /* Makes the whole box clickable */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .resource-card:hover {
-    transform: translateY(-3px);
-    /* Lifts up slightly */
-    background: rgba(255, 255, 255, 0.6);
-    /* Gets brighter */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: #D1D5DB;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Typography inside cards */
 .resource-card h3 {
-    font-size: 1.1rem;
-    margin: 0 0 0.5rem 0;
-    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 0 0 0.75rem 0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #0F172A;
+}
+
+.resource-card h3 a {
+    color: #CE3B62;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.resource-card h3 a:hover {
+    color: #932542;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .resource-card .founder {
-    margin-top: 15px;
-    font-size: 0.85rem;
-    opacity: 0.8;
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+.resource-card .founder a {
+    color: #4B5563;
+    font-weight: 500;
 }
 
 .resource-card p {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    opacity: 0.9;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4B5563;
 }
 
 /* Fix for the section titles */
 .resource-group h2 {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #282C34;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(40, 44, 52, 0.1);
-    padding-bottom: 0.5rem;
-    opacity: 0.7;
+    letter-spacing: 0.1em;
+    color: #64748B;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 /* Hide the checkbox and button on desktop */
@@ -424,30 +464,34 @@ footer a {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #282C34;
+    background-color: #1A1A1A;
     margin: 4px 0;
+    border-radius: 2px;
 }
 
 .main-nav {
     /* Position it as a dropdown */
     display: none;
     position: absolute;
-    top: 60px;
+    top: 72px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .main-nav a {
     width: 100%;
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 16px 20px;
+    border-bottom: 1px solid #F3F4F6;
 }
 
-/* THE MAGIC: If the checkbox is checked, show the nav */
+/* If the checkbox is checked, show the nav */
 #nav-check:checked~.main-nav {
     display: flex;
 }
