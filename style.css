@@ -293,6 +293,18 @@ footer a:hover {
     text-align: left;
 }
 
+.resource-card .new {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #CE3B62;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+}
+
 /* 2. The Grid System */
 .resource-grid {
     display: grid;
