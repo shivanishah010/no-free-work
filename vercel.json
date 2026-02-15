@@ -1,4 +1,5 @@
 {
+   "$schema": "https://freelancerateguide.com/vercel.json",
   "rewrites": [
     {
       "source": "/subscription-tracker",
