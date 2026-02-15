@@ -1,12 +1,16 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/subscription-tracker(.*)",
-      "dest": "https://freelance-subscriptions-tracker.vercel.app$1"
+      "source": "/subscription-tracker",
+      "destination": "https://freelance-subscriptions-tracker.vercel.app/"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "https://freelance-subscriptions-tracker.vercel.app/assets/$1"
+      "source": "/subscription-tracker/:path*",
+      "destination": "https://freelance-subscriptions-tracker.vercel.app/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://freelance-subscriptions-tracker.vercel.app/assets/:path*"
     }
   ]
 }
