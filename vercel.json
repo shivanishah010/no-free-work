@@ -1,9 +1,16 @@
 {
-  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/subscription-tracker/:path*",
       "destination": "https://freelance-subscriptions-tracker.vercel.app/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://freelance-subscriptions-tracker.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/@vite/:path*",
+      "destination": "https://freelance-subscriptions-tracker.vercel.app/@vite/:path*"
     }
   ]
 }
