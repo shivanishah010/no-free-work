@@ -293,7 +293,7 @@ footer a:hover {
     text-align: left;
 }
 
-.resource-card .new {
+.resource-card .badge {
     display: inline-block;
     text-transform: uppercase;
     background-color: #000000;
