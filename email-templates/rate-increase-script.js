@@ -1,5 +1,5 @@
 const messages = [
-    `Hi [Client Name],
+    `Hi [Client name],
 
 I wanted to give you advance notice that my rates will be adjusting from [current rate] to [new rate], effective [date].
 
@@ -8,9 +8,9 @@ This is part of my annual review to ensure my pricing reflects current market st
 I really enjoy working with you and I'm looking forward to continuing our partnership. If you'd like to discuss this or have any questions, I'm happy to hop on a call.
 
 Best,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I'm reaching out to let you know that my rates will be adjusting from [current rate] to [new rate] with effect from [date].
 
@@ -19,9 +19,9 @@ Over the past year, we've achieved [list specific results]. This adjustment refl
 I'm grateful for the trust you've placed in me, and I'm excited to keep supporting [client or specific project or goal]. If you'd like to chat about this or discuss upcoming work, let me know.
 
 Thanks,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I hope you're doing well. I'm writing to let you know that my rates will be increasing to [new rate] starting [date].
 
@@ -30,9 +30,9 @@ I wanted to give you the option to lock in your current rate of [current rate] f
 Either way, I'm looking forward to continuing to work together. Let me know if you'd like to discuss upcoming projects or if you have any questions.
 
 Best,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 Hope you're doing well! I wanted to give you a heads up that I'll be adjusting my rates from [current rate] to [new rate] starting [date].
 
@@ -41,9 +41,9 @@ This is something I do annually to keep my pricing in line with the market and t
 I've really loved working with you, and I'm excited to keep our partnership going strong. If you want to chat about this or anything else, let me know.
 
 Best,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I'm reaching out to let you know that my rates will be moving from [current rate] to [new rate] starting [date].
 
@@ -52,9 +52,9 @@ We've had some great wins together this past year: [share specific results]. I'm
 I'm grateful you've trusted me with your projects, and I'm looking forward to what we'll tackle next. If you want to discuss upcoming work or have any questions, I'm here.
 
 Thanks,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 Hope you're having a great week! I wanted to let you know that my rates will be going up to [new rate] starting [date].
 
@@ -63,9 +63,9 @@ If you've got any projects in mind for the near future, I'm happy to honor my cu
 Either way, I'm really looking forward to continuing to work together. Just let me know if you want to chat about what's coming up.
 
 Best,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I wanted to reach out to let you know my rate will be adjusting to [new rate] starting [date].
 
@@ -76,9 +76,9 @@ Nothing changes on my end in terms of how I work or what you can expect from me.
 Let me know if you want to chat about anything.
 
 Best,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I wanted to give you a heads up that my rate will be changing from [current rate] to [new rate] effective [date].
 
@@ -87,9 +87,9 @@ Looking back at what we've accomplished this past year, I'm really proud of the 
 I appreciate the trust you've shown in me, and I'm excited about the projects we have ahead. If there's anything you want to discuss, please let me know.
 
 Talk soon,
-[Your Name]`,
+[Your name]`,
 
-`Hi [Client Name],
+`Hi [Client name],
 
 I'm writing to let you know my rate will be updating to [new rate] starting [date].
 
@@ -100,7 +100,7 @@ As a thank-you for being such a great partner, I'm happy to lock in my current r
 Either way, I'm excited to keep working together. Happy to chat if you have questions.
 
 Best,
-[Your Name]`
+[Your name]`
 
       ];
 
