@@ -299,6 +299,10 @@ footer a:hover {
     margin: 3rem 0 4rem 0;
 }
 
+.home-note {
+    text-align: center;
+}
+
 .home-main .resource-group {
     margin-top: 2.5rem;
 }
